@@ -4,13 +4,11 @@
     box-sizing: border-box;
     margin: 0%;
 }
-
 body {
     background: #A7C4BC;
     font-family: 'Roboto', sans-serif;
     font-size: 1rem;
 }
-
 /* todas las etiquetas */
 a {
     text-decoration: none;
@@ -37,18 +35,14 @@ td {
     padding: 5px;
 }
 
-.footer_logo {
-    display: flex;
-    align-items: center;
+/* abrir-cerrar modal */
+.ocultar {
+    display: none;
 }
 
 main {
     padding-top: 5rem;
     padding-bottom: 3rem;
-}
-
-.ocultar {
-    display: none;
 }
 
 /* Header contenedor padre */
@@ -70,7 +64,7 @@ header {
     z-index: 2;
 }
 
-/* contenedor PADRE div < LOGO EMPRESA */
+/* logo menu */
 .menu_logo{
     display: flex;
     align-items: center;
@@ -128,8 +122,7 @@ nav a:hover {
     height: 30px;
     border-radius: 0.2rem;
 }
-
-/* div cards Productos */
+/* contenedor grid de todos los productos */
 .gridCards {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -139,7 +132,7 @@ nav a:hover {
     width: 80%;
     margin: auto;
 }
-/* CARDS DE LOS PRODUCTOS > padre */
+/* cards de los productos */
 .cardProductos {
     width: 500px;
     height: 327px;
@@ -162,7 +155,6 @@ nav a:hover {
     height: 100%;
     z-index: 1;
 }
-
 .card_imgProducto {
     height: 100%;
 }
@@ -185,7 +177,6 @@ nav a:hover {
     border-bottom: 1px solid #cdcecf;
 
 }
-
 .div_btn_fav div {
     display: flex;
     flex-direction: column;
@@ -208,7 +199,6 @@ nav a:hover {
     transition: all 0.5s;
     z-index: 1;
 }
-
 .btnCard::before {
     content: "";
     position: absolute;
@@ -220,20 +210,16 @@ nav a:hover {
     z-index: -1;
     transition: all 0.5s;
 }
-
 .btnCard:hover::before {
     width: 100%;
 }
-
 .btnCard:hover {
     color: white;
 }
-
 .btnCard:active:before {
     background: #b9b9b9;
 }
 
-/* --------------------------------- */
 
 /* --------------CARRITO USUARIO------------------- */
 .div_carrito {
@@ -245,30 +231,24 @@ nav a:hover {
     width: 60%;
     padding: 5px;
 }
-
 .btn_Vaciar {
     width: 20%;
 }
-
 .div_carrito div {
-    /* background-color: antiquewhite; */
     margin: 10px;
     width: 90%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
-
 .div-carritoContenido {
     background-color: #aedaa6;
     padding: 10px;
 }
-
 .carritoHijo {
     background-color: #aedaa6;
     padding: 10px;
 }
-
 .btnEliminar {
     width: 50%;
 
@@ -333,7 +313,10 @@ footer {
     justify-content: space-around;
     height: 200px;
 }
-
+.footer_logo {
+    display: flex;
+    align-items: center;
+}
 .FooterRedesUl {
     display: flex;
 }
