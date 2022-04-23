@@ -37,6 +37,11 @@ td {
     padding: 5px;
 }
 
+.footer_logo {
+    display: flex;
+    align-items: center;
+}
+
 main {
     padding-top: 5rem;
     padding-bottom: 3rem;
@@ -335,3 +340,4 @@ footer {
 .FooterRedesUl li {
     width: 20px;
 }
+
