@@ -1,11 +1,10 @@
 // SIMULADOR CARRITO DE COMPRAS.
 
+
 // fetch cargar datos de local json.
 fetch("./stock.json")
   .then((response) => response.json())
   .then((data) => {
-    // console.log(data);
-
 
     // array vacio, almacena los productos elegidos por el usuario.
     let carritoProductos = [];
@@ -22,7 +21,7 @@ fetch("./stock.json")
     const btnBuscador = document.getElementById("btnBuscadorId");
     // ubica a la etiqueta main con class "main"
     const mainClass = document.querySelector('.main');
-    
+
     const abrirModal = document.querySelector('.btnAbrirModal')
     const modal = document.querySelector('.modal')
     const cerrarModal = document.querySelector('.btnCerrarModal')
@@ -131,10 +130,10 @@ fetch("./stock.json")
       
     }
 
-    
 
 
-    
+
+
     /*
     function mostrarCarrito() {
       let divPadreCarrito = document.createElement('div')
@@ -276,8 +275,7 @@ fetch("./stock.json")
       // recuperar datos llamando a la clave: carritoUsuario
       let recuperarStorage = JSON.parse(localStorage.getItem("carritoUsuario"));
       // condicional
-      recuperarStorage &&
-        recuperarStorage.forEach((e) => {
+      recuperarStorage && recuperarStorage.forEach((e) => {
           // funcion
           mostrarCarrito(e);
           // añadir elementos al array "carritoProductos"
@@ -290,10 +288,7 @@ fetch("./stock.json")
     //? actualizar precio del carrito.
     function actualizarCarrito() {
       // precio final de los productos agregados en el carrito.
-      precioFinal.innerText = carritoProductos.reduce(
-        (ac, e) => ac + e.precio * e.cantidad,
-        0
-      );
+      precioFinal.innerText = carritoProductos.reduce((ac, e) => ac + e.precio * e.cantidad,0);
       enviarDatosStorage();
     }
 
