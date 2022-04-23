@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- tostify -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <title>PlantsLab</title>
+</head>
+
+<!-- inicio body -->
+<body>
+    <!-- inicio header -->
+    <header>
+        
+        <!-- section - menu -->
+        <section class="menu">
+            
+            <a href="" class="menu_logo">
+                <img class="logo_img" src="logo/logo1.png" alt="LogoEmpresa">
+                <span class="menu_logo_span">PlantsLab.</span>
+            </a>
+            
+            <!-- nav inicio -->
+            <nav class="menu_nav">
+                <ul class="menu_ul">
+                    <li>
+                        <a href="">Inicio</a>
+                    </li>
+    
+                    <li>
+                        <a href="">productos</a>
+                    </li>
+    
+                    <li>
+                        <a href="">contacto</a>
+                    </li>
+                </ul>
+    
+            </nav>
+            <!-- cierre nav -->
+
+            <!-- inicio div -->
+            <div class="menu_div">
+
+                <input class="div_buscador" type="text" id="buscadorId" placeholder="Buscar Producto..." > 
+    
+                <!-- boton Abirir "modal" carrito -->
+                <button class="btnAbrirModal">
+                    carrito
+                </button>
+                
+            </div>
+            <!-- cierre div -->
+
+        </section>
+        <!-- cierre section - menu -->
+    </header>
+    <!-- cierre header -->
+    
+    <!-- inicio main -->
+    <main id="gridMain" class="main">
+
+        <!-- inicio div - selector -->
+        <div class="main_div">
+
+            <!-- tipo de plantas -->
+            <select id="tipoPlantas" class="div_select">
+                <option value="todos">Todos</option>
+                <option value="interior">De Interior</option>
+                <option value="exterior">De Exterior</option>
+            </select>
+
+            <!-- min max precio -->
+            <select id="tipoPlantas" class="div_select">
+                <option value="todos">Todos</option>
+                <option value="interior">De Interior</option>
+                <option value="exterior">De Exterior</option>
+            </select>
+            
+        </div>
+        <!-- cierre div - selector -->
+
+        <!-- inicio div cards -->
+        <div id="divProductosCards" class="gridCards">
+            
+            
+        </div>
+
+        <div class="modal modalEvento">
+
+            <div class="modalContenedor"> 
+
+                <div class="modalHeader">
+                    <h5 class="modalTitulo">carrito</h5>
+                    <button type="button" class="btnCerrarModal" >
+                        X
+                    </button>
+                </div>
+
+                <div class="modalBody">
+                    <table class="modalTable">
+                        <thead>
+                            <tr>
+                                <th>nombre</th>
+                                <th>tipo de planta</th>
+                                <th>cantidad</th>
+                                <th>precio</th>
+                                <th>borrar</th>
+                            </tr>
+                        </thead>
+                        
+                        <tbody id="tablaContenedor">
+                            
+                        </tbody>
+
+                    </table>
+                </div>
+
+                <div class="modalFooter">
+                    <button>finalizar compra</button>
+                    <p> Precio Final: $<span id="precioFinal">0</span></p>
+                </div>
+
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+
+        <a href="" class="div_contenedor_logo">
+            <img class="logo_img" src="logo/logo1.png" alt="LogoEmpresa">
+            <span class="div_span_logo">PlantsLab.</span>
+        </a>
+
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+
+        <div class="FooterRedes">
+            <ul class="FooterRedesUl">
+                <li><a href=""><img src="" alt=""></a></li>
+                <li><a href=""><img src="" alt=""></a></li>
+                <li><a href=""><img src="" alt=""></a></li>
+            </ul>
+        </div>
+
+    </footer>
+    <!-- JS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
