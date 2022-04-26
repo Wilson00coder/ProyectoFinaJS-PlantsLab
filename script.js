@@ -9,36 +9,38 @@ fetch("./stock.json")
     // array vacio, almacena los productos elegidos por el usuario.
     let carritoProductos = [];
 
-    // etiqueta padre de las cards
     const divProductosCards = document.getElementById("divProductosCards");
-    // etiqueta padre del carrito usuario.
+
     const tbody = document.getElementById("tablaContenedor");
     // id "precioTotal" < precio final de la compra.
     const precioFinal = document.getElementById("precioFinal");
     // input con id "buscadorProductos"
-    const inputBuscador = document.getElementById("buscadorId");
+    const inputBuscador = document.querySelector("#buscadorId");
     // btn buscador de productos
-    const btnBuscador = document.getElementById("btnBuscadorId");
-    // ubica a la etiqueta main con class "main"
+    // const btnBuscador = document.querySelector("#btnBuscadorId");
+    // busca etiqueta main con class "main"
     const mainClass = document.querySelector('.main');
-
+    
+    // modalCarrito
     const abrirModal = document.querySelector('.btnAbrirModal')
     const modal = document.querySelector('.modal')
     const cerrarModal = document.querySelector('.btnCerrarModal')
 
-
+    // modal Finalizar Compra
+    const btnFinCompra = document.querySelector('#btnFinCompra')
+    const modalFinCompra = document.querySelector('.modalFinCompra')
+    const btnCerrarFinCompra = document.querySelector('.btnCerrarFinCompra')
     mostrarCards(data);
 
     //? mostrar cards de los productos en el html
     function mostrarCards(arrayPlantas) {
       divProductosCards.innerHTML = "";
-
       // recorrer array de los productos con metodo forEach.
       arrayPlantas.forEach((Planta) => {
         // creacion de etiqueta dinamica div con el metodo > createElement.
         let divCardHijo = document.createElement("div");
         // creacion de class "cardProductos"
-        divCardHijo.classList.add("cardProductos");
+        divCardHijo.classList.add("cardProducto");
         //
         divCardHijo.innerHTML += `
             <!-- CARD -->
@@ -55,13 +57,11 @@ fetch("./stock.json")
 
                 <p> Tipo de Planta: ${Planta.tipoPlanta}.</p>
 
-                <p> Precio: $${Planta.precio}</p>
+                <span class="precioCard">$${Planta.precio}</span>
 
                     <div class="btn_div">
 
-                        <button id="btnAgregar${Planta.id}" class="btnCard">
-                        Comprar
-                        </button>
+                        <button id="btnAgregar${Planta.id}" class="btnCard">Comprar</button>
 
                     </div>
 
@@ -122,61 +122,10 @@ fetch("./stock.json")
 
         mostrarCarrito(productoAgregado);
 
-
-
       }
       // enviarDatosStorage()
 
-      
     }
-
-
-
-
-
-    /*
-    function mostrarCarrito() {
-      let divPadreCarrito = document.createElement('div')
-      divPadreCarrito.classList.add('modal')
-      divPadreCarrito.innerHTML = `
-      <div class="modalContenedor"> 
-
-          <div class="modalHeader">
-              <h5 class="modalTitulo">carrito</h5>
-              <button type="button" class="modalCerrar" >
-                  X
-              </button>
-          </div>
-
-          <div class="modalBody">
-              <table class="modalTable">
-                  <thead>
-                      <tr>
-                          <th>nombre</th>
-                          <th>tipo de planta</th>
-                          <th>cantidad</th>
-                          <th>precio</th>
-                          <th>borrar</th>
-                      </tr>
-                  </thead>
-                  
-                  <tbody id="tablaContenedor">
-                      
-                  </tbody>
-
-              </table>
-          </div>
-
-          <div class="modalFooter">
-              <button>finalizar compra</button>
-              <p> Precio Final: $<span id="precioFinal">0</span></p>
-          </div>
-
-      </div>
-      `
-      mainClass.appendChild(divPadreCarrito)
-
-    } */
 
     localStorage.carritoUsuario && recuperarDatosStorage();
 
@@ -195,7 +144,9 @@ fetch("./stock.json")
             <td>${arrayProducto.tipoPlanta}</td>
             <td id="tdCantidad${arrayProducto.id}">${arrayProducto.cantidad}</td>
             <td>$${arrayProducto.precio}</td>
-            <button class="btnEliminar" id="eliminar${arrayProducto.id}">Eliminar</button>
+            <button class="btnEliminar btn-css" id="eliminar${arrayProducto.id}">
+              <img src="/feathericons/trash.svg" alt="Carrito Porductos">
+            </button>
         </tr>
     `;
       // imprimir etiqueta en el html
@@ -254,16 +205,7 @@ fetch("./stock.json")
       });
     }
 
-    // evento abrir modal carrito
-    abrirModal.addEventListener("click", () => {
-      modal.classList.remove('modalEvento')
-    })
-    // evento cerrar modal carrito
-    cerrarModal.addEventListener("click", () => {
-      modal.classList.add('modalEvento')
-    })
-
-
+    
 
     //? FUNCION: almacenar datos de array "carritoProductos" en localStorage
     function enviarDatosStorage() {
@@ -292,4 +234,25 @@ fetch("./stock.json")
       enviarDatosStorage();
     }
 
+    //* Eventos
+
+    // carrito de compras 
+    // evento abrir modal carrito
+    abrirModal.addEventListener("click", () => {
+      modal.classList.remove('modalEvento')
+    })
+    // evento cerrar modal carrito
+    cerrarModal.addEventListener("click", () => {
+      modal.classList.add('modalEvento')
+    })
+
+    // Finalizar Compra
+    btnFinCompra.addEventListener("click", () => {
+      modalFinCompra.classList.add('modalEvento')
+    })
+
+    // cierre el modal
+    btnCerrarFinCompra.addEventListener("click", () => {
+      modalFinCompra.classList.remove('modalEvento')
+    })
   });

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,127 +9,184 @@
     <link rel="stylesheet" href="style.css">
     <!-- tostify -->
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <!-- icono -->
+    <link rel="shortcut icon" href="/logo/logo1.png">
     <title>PlantsLab</title>
 </head>
 
 <!-- inicio body -->
+
 <body>
     <!-- inicio header -->
     <header>
-        
-        <section class="menu">
-            
+
+        <section class="menu container">
+
             <a href="" class="menu_logo">
                 <img class="logo_img" src="logo/logo1.png" alt="LogoEmpresa">
-                <span class="menu_logo_span">PlantsLab.</span>
+
+                <span class="menu_spanLogo hoverLogo">
+                    PlantsLab
+                </span>
+                <!-- <span class="menu_spanLogo colorLogo">PlantsLab.</span> -->
             </a>
-            
+
             <nav class="menu_nav">
                 <ul class="menu_ul">
                     <li>
-                        <a href="">Inicio</a>
+                        <a href="#">Inicio</a>
                     </li>
-    
+
                     <li>
-                        <a href="">productos</a>
+                        <a href="#">Productos</a>
                     </li>
-    
+
                     <li>
-                        <a href="">contacto</a>
+                        <a href="#">Contacto</a>
                     </li>
                 </ul>
-    
+
             </nav>
 
             <div class="menu_div">
 
-                <input class="div_buscador" type="text" id="buscadorId" placeholder="Buscar Producto..." > 
-    
-                <!-- boton Abirir "modal" carrito -->
-                <button class="btnAbrirModal">
-                    carrito
+                <input class="div_buscador" type="text" id="buscadorId" placeholder="Buscar Producto...">
+                <button id="btnBuscadorId" class="btn-css">
+                    <img src="/feathericons/search.svg" alt="">
                 </button>
-                
+                <!-- boton Abirir "modal" carrito -->
+                <button class="btnAbrirModal btn-css">
+                    <img src="/feathericons/shopping-bag.svg" alt="Carrito Porductos">
+                </button>
+
             </div>
 
         </section>
 
     </header>
     <!-- cierre header -->
-    
+
     <!-- inicio main -->
     <main id="gridMain" class="main">
 
-        <div class="main_div">
+        <section class="container">
 
-            <!-- tipo de plantas -->
-            <select id="tipoPlantas" class="div_select">
-                <option value="todos">Todos</option>
-                <option value="interior">De Interior</option>
-                <option value="exterior">De Exterior</option>
-            </select>
+            <div class="main_div">
 
-            <!-- min max precio -->
-            <select id="tipoPlantas" class="div_select">
-                <option value="todos">Todos</option>
-                <option value="interior">De Interior</option>
-                <option value="exterior">De Exterior</option>
-            </select>
-            
-        </div>
-
-        <!-- inicio div cards -->
-        <div id="divProductosCards" class="gridCards">
-            
-            
-        </div>
-
-        <div class="modal modalEvento">
-
-            <div class="modalContenedor"> 
-
-                <div class="modalHeader">
-                    <h5 class="modalTitulo">carrito</h5>
-                    <button type="button" class="btnCerrarModal" >
-                        X
-                    </button>
-                </div>
-
-                <div class="modalBody">
-                    <table class="modalTable">
-                        <thead>
-                            <tr>
-                                <th>Nombre</th>
-                                <th>Tipo De Planta</th>
-                                <th>Cantidad</th>
-                                <th>Precio</th>
-                                <th>Borrar</th>
-                            </tr>
-                        </thead>
-                        
-                        <tbody id="tablaContenedor">
-                            
-                        </tbody>
-
-                    </table>
-                </div>
-
-                <div class="modalFooter">
-                    <button>finalizar compra</button>
-                    <p> Precio Final: $<span id="precioFinal">0</span></p>
-                </div>
+                <!-- tipo de plantas -->
+                <select id="tipoPlantas" class="div_select">
+                    <option value="todos">Todos</option>
+                    <option value="interior">De Interior</option>
+                    <option value="exterior">De Exterior</option>
+                </select>
 
             </div>
-        </div>
+
+            <div id="divProductosCards" class="gridCards">
+
+                
+                <!-- 
+                    <div class="cardProducto">
+                        <div class="card_img">
+                            <img class="card_imgProducto" src="${Planta.img}" alt="imagenDelProducto">
+                        </div>
+
+                        <div class="card_contenido">
+
+                            <h2>${Planta.nombre}</h2>
+
+                            <p>${Planta.desc}</p>
+
+                            <p> Tipo de Planta: ${Planta.tipoPlanta}.</p>
+
+                            <span class="precioCard">$${Planta.precio}</span>
+
+                            <div class="btn_div">
+
+                                <button id="btnAgregar${Planta.id}" class="btnCard">Comprar</button>
+
+                            </div>
+
+                        </div>
+                    </div>
+                -->
+
+            </div>
+
+            <div class="modal modalEvento">
+
+                <div class="modalContenedor">
+
+                    <div class="modalHeader">
+                        <h5 class="modalTitulo">carrito</h5>
+                        <button type="button" class="btnCerrarModal btn-css">
+                            <img src="/feathericons/x.svg" alt="">
+                        </button>
+                    </div>
+
+                    <div class="modalBody">
+                        <table class="modalTable">
+                            <thead>
+                                <tr>
+                                    <th>Nombre</th>
+                                    <th>Tipo De Planta</th>
+                                    <th>Cantidad</th>
+                                    <th>Precio</th>
+                                    <th>Borrar</th>
+                                </tr>
+                            </thead>
+
+                            <tbody id="tablaContenedor">
+
+                            </tbody>
+
+                        </table>
+                    </div>
+
+                    <div class="modalFooter">
+                        <button id="btnFinCompra" class="btn-css">Finalizar Compra</button>
+                        <p> Precio Final: $<span id="precioFinal">0</span></p>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </section>
+
+        <section class="modalFinCompra ">
+            
+            <!-- padre modal fin de la compra. -->
+            <div>
+                
+                <!-- contenido del modal -->
+                
+
+                    <div>
+                        
+                        <div class="modalFinCompra-body">
+                            <img src="Undraw/undraw_pago.svg" alt="">
+                            <p>COMPRA FINALIZADA</p>
+                        </div>
+                        <div class="modalFinCompra-footer">
+                            <button class=" btnCerrarFinCompra btn-css">Cerrar</button>
+                        </div>
+                    </div>
+                    
+            </div>
+
+        </section>
+
     </main>
     <!-- cierre main -->
-    
+
     <!-- inicio footer -->
     <footer>
 
         <a href="" class="footer_logo">
             <img class="logo_img" src="logo/logo1.png" alt="LogoEmpresa">
-            <span class="div_span_logo">PlantsLab.</span>
+            
+            <span class="div_span_logo hoverLogo">PlantsLab.</span>
         </a>
 
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
@@ -149,4 +207,5 @@
     <script src="script.js"></script>
 
 </body>
+
 </html>
