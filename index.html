@@ -18,9 +18,8 @@
 
 <body>
     <!-- inicio header -->
-    <header>
+    <header class="menu container">
 
-        <section class="menu container">
 
             <a href="" class="menu_logo">
                 <img class="logo_img" src="logo/logo1.png" alt="LogoEmpresa">
@@ -28,10 +27,11 @@
                 <span class="menu_spanLogo hoverLogo">
                     PlantsLab
                 </span>
-                <!-- <span class="menu_spanLogo colorLogo">PlantsLab.</span> -->
             </a>
 
-            <nav class="menu_nav">
+
+            <nav class="menuNav">
+                
                 <ul class="menu_ul">
                     <li>
                         <a href="#">Inicio</a>
@@ -44,24 +44,29 @@
                     <li>
                         <a href="#">Contacto</a>
                     </li>
+
+                    
                 </ul>
+                
+                <label for="check" class="esconderMenu"> 
+                    &#215
+                </label>
 
             </nav>
 
             <div class="menu_div">
 
-                <input class="div_buscador" type="text" id="buscadorId" placeholder="Buscar Producto...">
-                <button id="btnBuscadorId" class="btn-css">
-                    <img src="/feathericons/search.svg" alt="">
-                </button>
                 <!-- boton Abirir "modal" carrito -->
                 <button class="btnAbrirModal btn-css">
                     <img src="/feathericons/shopping-bag.svg" alt="Carrito Porductos">
                 </button>
 
-            </div>
+                <!-- <input type="checkbox" id="check"> -->
+                <label for="check" class="mostrarMenu"> 
+                    &#8801 
+                </label>
 
-        </section>
+            </div>
 
     </header>
     <!-- cierre header -->
@@ -70,17 +75,6 @@
     <main id="gridMain" class="main">
 
         <section class="container">
-
-            <div class="main_div">
-
-                <!-- tipo de plantas -->
-                <select id="tipoPlantas" class="div_select">
-                    <option value="todos">Todos</option>
-                    <option value="interior">De Interior</option>
-                    <option value="exterior">De Exterior</option>
-                </select>
-
-            </div>
 
             <div id="divProductosCards" class="gridCards">
 
@@ -163,7 +157,6 @@
                 
 
                     <div>
-                        
                         <div class="modalFinCompra-body">
                             <img src="Undraw/undraw_pago.svg" alt="">
                             <p>COMPRA FINALIZADA</p>

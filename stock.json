@@ -3,7 +3,7 @@
     "id": 0,
     "nombre": "Vriesea",
     "tipoPlanta": "interior",
-    "img": "/img/planta1.jpg",
+    "img": "/img/planta0.jpg",
     "desc": "Lorem ipsum dolor sit amet consectetur, adipisicing elit.Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
     "precio": 600,
     "cantidad": 1
@@ -12,81 +12,89 @@
     "id": 1,
     "nombre": "Ficus",
     "tipoPlanta": "Exterior",
-    "img": "/img/planta2.jpg",
+    "img": "/img/planta1.jpg",
     "desc": "Lorem ipsum dolor sit amet consectetur, adipisicing elit.Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
     "precio": 430,
     "cantidad": 1
+
   },
   {
     "id": 2,
     "nombre": "Cintas",
     "tipoPlanta": "interior",
-    "img": "/img/planta3.jpg",
+    "img": "/img/planta2.jpg",
     "desc": "Lorem ipsum dolor sit amet consectetur, adipisicing elit.Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
-    "precio": 200,
+    "precio": 150,
     "cantidad": 1
+
   },
   {
     "id": 3,
     "nombre": "Espina de Cristo",
     "tipoPlanta": "Exterior",
-    "img": "/img/planta4.jpg",
+    "img": "/img/planta3.jpg",
     "desc": "Lorem ipsum dolor sit amet consectetur, adipisicing elit.Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
     "precio": 230,
     "cantidad": 1
+
   },
   {
     "id": 4,
     "nombre": "Petunias",
     "tipoPlanta": "interior ",
-    "img": "img/planta5.jpg",
+    "img": "img/planta4.jpg",
     "desc": "Lorem ipsum dolor sit amet consectetur, adipisicing elit.Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
     "precio": 800,
     "cantidad": 1
+
   },
   {
     "id": 5,
-    "nombre": "Hiedra",
+    "nombre": "Dalia",
     "tipoPlanta": "Exterior",
-    "img": "/img/planta6.jpg",
+    "img": "/img/planta5.jpg",
     "desc": "Lorem ipsum dolor sit amet consectetur, adipisicing elit.Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
     "precio": 100,
     "cantidad": 1
+
   },
   {
     "id": 6,
     "nombre": "Durillo",
     "tipoPlanta": "interior",
-    "img": "/img/planta7.jpg",
+    "img": "/img/planta6.jpg",
     "desc": "Lorem ipsum dolor sit amet consectetur, adipisicing elit.Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
     "precio": 350,
     "cantidad": 1
+
   },
   {
     "id": 7,
     "nombre": "Lavanda",
     "tipoPlanta": "Exterior",
-    "img": "/img/planta8.jpg",
+    "img": "/img/planta7.jpg",
     "desc": "Lorem ipsum dolor sit amet consectetur, adipisicing elit.Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
     "precio": 580,
     "cantidad": 1
+
   },
   {
     "id": 8,
     "nombre": "Cactus",
     "tipoPlanta": "Interior",
-    "img": "/img/planta9.jpg",
+    "img": "/img/planta8.jpg",
     "desc": "Lorem ipsum dolor sit amet consectetur, adipisicing elit.Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
-    "precio": 580,
+    "precio": 400,
     "cantidad": 1
+
   },
   {
     "id": 9,
     "nombre": "Potus",
     "tipoPlanta": "Exterior",
-    "img": "/img/planta10.jpg",
+    "img": "/img/planta9.jpg",
     "desc": "Lorem ipsum dolor sit amet consectetur, adipisicing elit.Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
-    "precio": 580,
+    "precio": 200,
     "cantidad": 1
   },
   {
@@ -95,178 +103,178 @@
     "tipoPlanta": "Interior",
     "img": "/img/planta10.jpg",
     "desc": "Lorem ipsum dolor sit amet consectetur, adipisicing elit.Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
-    "precio": 580,
+    "precio": 750,
     "cantidad": 1
   },
   {
     "id": 11,
     "nombre": "Tillandsia",
     "tipoPlanta": "Exterior",
-    "img": "/img/planta12.jpg",
+    "img": "/img/planta11.jpg",
     "desc": "Lorem ipsum dolor sit amet consectetur, adipisicing elit.Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
-    "precio": 580,
+    "precio": 120,
     "cantidad": 1
   },
   {
     "id": 12,
     "nombre": "Boj",
     "tipoPlanta": "interior",
-    "img": "/img/planta13.jpg",
+    "img": "/img/planta12.jpg",
     "desc": "Lorem ipsum dolor sit amet consectetur, adipisicing elit.Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
-    "precio": 580,
+    "precio": 250,
     "cantidad": 1
   },
   {
     "id": 13,
     "nombre": "Durillo",
     "tipoPlanta": "Exterior",
-    "img": "/img/planta14.jpg",
+    "img": "/img/planta13.jpg",
     "desc": "Lorem ipsum dolor sit amet consectetur, adipisicing elit.Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
-    "precio": 580,
+    "precio": 100,
     "cantidad": 1
   },
   {
     "id": 14,
     "nombre": "Adelfa",
     "tipoPlanta": "interior",
-    "img": "/img/planta15.jpg",
+    "img": "/img/planta14.jpg",
     "desc": "Lorem ipsum dolor sit amet consectetur, adipisicing elit.Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
-    "precio": "580",
+    "precio": 790,
     "cantidad": 1
   },
   {
     "id": 15,
     "nombre": "Buganvilla",
     "tipoPlanta": "Exterior",
-    "img": "/img/planta16.jpg",
+    "img": "/img/planta15.jpg",
     "desc": "Lorem ipsum dolor sit amet consectetur, adipisicing elit.Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
-    "precio": 580,
+    "precio": 220,
     "cantidad": 1
   },
   {
     "id": 16,
     "nombre": "cocotero",
     "tipoPlanta": "Interior",
-    "img": "/img/planta17.jpg",
+    "img": "/img/planta16.jpg",
     "desc": "Lorem ipsum dolor sit amet consectetur, adipisicing elit.Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
-    "precio": 580,
+    "precio": 180,
     "cantidad": 1
   },
   {
     "id": 17,
     "nombre": "Aloe vera",
     "tipoPlanta": "Exterior",
-    "img": "/img/planta18.jpg",
+    "img": "/img/planta17.jpg",
     "desc": "Lorem ipsum dolor sit amet consectetur, adipisicing elit.Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
-    "precio": 580,
+    "precio": 880,
     "cantidad": 1
   },
   {
     "id": 18,
     "nombre": "Esparraguera",
     "tipoPlanta": "Interior",
-    "img": "/img/planta19.jpg",
+    "img": "/img/planta18.jpg",
     "desc": "Lorem ipsum dolor sit amet consectetur, adipisicing elit.Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
-    "precio": 580,
+    "precio": 800,
     "cantidad": 1
   },
   {
     "id": 19,
-    "nombre": "Yuca",
+    "nombre": "Espatifilo",
     "tipoPlanta": "Exterior",
-    "img": "/img/planta4.jpg",
+    "img": "/img/planta19.jpg",
     "desc": "Lorem ipsum dolor sit amet consectetur, adipisicing elit.Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
-    "precio": 580,
+    "precio": 440,
     "cantidad": 1
   },
   {
     "id": 20,
-    "nombre": "Yuca",
+    "nombre": "Helecho",
     "tipoPlanta": "interior",
-    "img": "/img/planta4.jpg",
+    "img": "/img/planta20.jpg",
     "desc": "Lorem ipsum dolor sit amet consectetur, adipisicing elit.Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
-    "precio": 580,
+    "precio": 680,
     "cantidad": 1
   },
   {
     "id": 21,
-    "nombre": "Yuca",
-    "tipoPlanta": "interior",
-    "img": "/img/planta4.jpg",
+    "nombre": "Hibisco",
+    "tipoPlanta": "Exterior",
+    "img": "/img/planta21.jpg",
     "desc": "Lorem ipsum dolor sit amet consectetur, adipisicing elit.Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
-    "precio": 580,
+    "precio": 700,
     "cantidad": 1
   },
   {
     "id": 22,
-    "nombre": "Yuca",
+    "nombre": "Azalea",
     "tipoPlanta": "interior",
-    "img": "/img/planta4.jpg",
+    "img": "/img/planta22.jpg",
     "desc": "Lorem ipsum dolor sit amet consectetur, adipisicing elit.Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
-    "precio": 580,
+    "precio": 200,
     "cantidad": 1
   },
   {
     "id": 23,
-    "nombre": "Yuca",
-    "tipoPlanta": "interior",
-    "img": "/img/planta4.jpg",
+    "nombre": "Drácena",
+    "tipoPlanta": "Exterior",
+    "img": "/img/planta23.jpg",
     "desc": "Lorem ipsum dolor sit amet consectetur, adipisicing elit.Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
-    "precio": 580,
+    "precio": 350,
     "cantidad": 1
   },
   {
     "id": 24,
-    "nombre": "Yuca",
+    "nombre": "Zamioculca",
     "tipoPlanta": "interior",
-    "img": "/img/planta4.jpg",
+    "img": "/img/planta24.jpg",
     "desc": "Lorem ipsum dolor sit amet consectetur, adipisicing elit.Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
-    "precio": 580,
+    "precio": 500,
     "cantidad": 1
   },
   {
     "id": 25,
-    "nombre": "Yuca",
-    "tipoPlanta": "interior",
-    "img": "/img/planta4.jpg",
+    "nombre": "Poto",
+    "tipoPlanta": "Exterior",
+    "img": "/img/planta25.jpg",
     "desc": "Lorem ipsum dolor sit amet consectetur, adipisicing elit.Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
-    "precio": 580,
+    "precio": 180,
     "cantidad": 1
   },
   {
     "id": 26,
-    "nombre": "Yuca",
+    "nombre": "Lirio",
     "tipoPlanta": "interior",
-    "img": "/img/planta4.jpg",
+    "img": "/img/planta26.jpg",
     "desc": "Lorem ipsum dolor sit amet consectetur, adipisicing elit.Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
-    "precio": 580,
+    "precio": 100,
     "cantidad": 1
   },
   {
     "id": 27,
-    "nombre": "Yuca",
-    "tipoPlanta": "interior",
-    "img": "/img/planta4.jpg",
+    "nombre": "Pensamiento ",
+    "tipoPlanta": "Exterior",
+    "img": "/img/planta27.jpg",
     "desc": "Lorem ipsum dolor sit amet consectetur, adipisicing elit.Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
-    "precio": 580,
+    "precio": 260,
     "cantidad": 1
   },
   {
     "id": 28,
-    "nombre": "Yuca",
+    "nombre": "Hortensias",
     "tipoPlanta": "interior",
-    "img": "/img/planta4.jpg",
+    "img": "/img/planta28.jpg",
     "desc": "Lorem ipsum dolor sit amet consectetur, adipisicing elit.Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
-    "precio": 580,
+    "precio": 900,
     "cantidad": 1
   },
   {
     "id": 29,
-    "nombre": "Yuca",
-    "tipoPlanta": "interior",
-    "img": "/img/planta4.jpg",
+    "nombre": "Prímulas",
+    "tipoPlanta": "Exterior",
+    "img": "/img/planta29.jpg",
     "desc": "Lorem ipsum dolor sit amet consectetur, adipisicing elit.Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
-    "precio": 580,
+    "precio": 500,
     "cantidad": 1
   }
 ]

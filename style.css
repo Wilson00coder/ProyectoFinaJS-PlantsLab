@@ -3,6 +3,7 @@
 * {
     box-sizing: border-box;
     margin: 0%;
+    padding: 0%;
 }
 body {
     background: #A7C4BC;
@@ -36,6 +37,11 @@ table {
 
 td {
     padding: 5px;
+}
+
+p {
+    font-weight: 100;
+    color: #666666;
 }
 
 /* abrir-cerrar modal */
@@ -84,10 +90,32 @@ header {
 /* logo */
 .menu_spanLogo {
     font-size: 1.4rem;
-    
 }
 .hoverLogo:hover {
     color: #2F5D62;
+}
+
+
+
+/* todo l nuevo */
+/* boton menu  */
+.mostrarMenu, .esconderMenu {
+    font-size: 31px;
+    cursor: pointer;
+    display: none;
+    transition: 0.4s;
+}
+.mostrarMenu {
+    order: 1;
+}
+.mostrarMenu:hover {
+    color: #2F5D62;
+}
+.esconderMenu:hover {
+    color: #2F5D62;
+}
+#check {
+    display: none;
 }
 
 /* inicio - productos - contacto */
@@ -97,9 +125,11 @@ header {
     margin: 0;
     padding: 0;
     list-style: none;
+    text-transform: uppercase;
 }
 .menu_ul li {
     display: inline-block;
+    margin: 5px;
 }
 nav a {
     display: block;
@@ -133,40 +163,14 @@ button.img {
 .btn-css:hover {
     border: #2F5D62 0.2em solid;
     /* background-color: rgba(183, 175, 175, 0.108); */
-    background-color: #c4d7d224;
+    background-color: #c4d7d200;
 }
 .menu_div {
     display: flex;
     align-items: center;
-}
-/* Barra Buscador */
-.div_buscador {
-    border: rgb(250, 250, 250) 0.2em solid;
-    border-radius: 0.3rem;
-    height: 2rem;
-    transition: border 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    height: 36px;
-
-}
-.div_buscador:hover {
-    border: #2F5D62 0.2em solid;
-
+    justify-content: center;
 }
 
-/* selector : tipo de plantas -  */
-.main_div {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    height: 100px;
-    width: 50%;
-    margin: auto;
-}
-.div_select {
-    width: 30%;
-    height: 30px;
-    border-radius: 0.2rem;
-}
 /* contenedor grid de todos los productos */
 
 .gridCards {
@@ -193,6 +197,14 @@ button.img {
 
 .cardProducto:hover {
     border: #2F5D62 0.2em solid;
+}
+/* .cardIcons {
+    display: flex;
+
+} */
+.cardIcons p {
+    border: solid 1px black;
+    margin: 0 0 0 10px;
 }
 
 /* imagenes productos */
@@ -407,10 +419,109 @@ footer {
     display: flex;
     align-items: center;
 }
-.FooterRedesUl {
-    display: flex;
-}
-.FooterRedesUl li {
-    width: 20px;
+
+
+/* RESPONSIVE TABLET */
+@media(max-width: 768px) {
+    /* header */
+    .mostrarMenu, .esconderMenu {
+        display: block;
+    }
+    .menu_div {
+        display: flex;
+        justify-content: space-evenly;
+        width: 20%;
+    }
+    .menuNav {
+        display: none;
+    }
+    
+    .esconderMenu {
+        position: absolute;
+        top: 40px;
+        right: 40px;
+    }
+    .cardProducto{
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+    .card_img {
+        display: flex;
+        justify-content: center;
+    }
+    .card_imgProducto {
+        width: 100%;
+
+    }
+
+    .card_contenido > p {
+        padding: 10px 0px 10px 0px;
+    }
+    .btn_div {
+        padding: 10px 0px 0px 0px;
+    }
+
+    .gridCards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(500px, 400px));
+        gap: 40px 20px;
+        justify-content: center;
+        justify-items: center;
+        margin: auto;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
+/* RESPONSIVE CELULAR L */
+@media(max-width: 425px) { 
+    .cardProducto{
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+    .card_img {
+        display: flex;
+        justify-content: center;
+    }
+    .card_imgProducto {
+        width: 40%;
+        display: flex;
+    }
+    .card_contenido > p {
+        padding: 10px 0px 10px 0px;
+    }
+    .btn_div {
+        padding: 10px 0px 0px 0px;
+    }
+}
+
+/* RESPONSIVE CELULAR S */
+@media(max-width: 320px) { 
+    .cardProducto{
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+    .card_img {
+        display: flex;
+        justify-content: center;
+    }
+    .card_contenido > p {
+        padding: 10px 0px 10px 0px;
+    }
+    .btn_div {
+        padding: 10px 0px 0px 0px;
+    }
+
+    .footer{
+        text-align: center;
+    }
+}
